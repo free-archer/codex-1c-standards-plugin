@@ -1,0 +1,20 @@
+{
+  "name": "ai-rules-1c",
+  "interface": {
+    "displayName": "AI Rules 1C"
+  },
+  "plugins": [
+    {
+      "name": "codex-1c-standards",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codex-1c-standards"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

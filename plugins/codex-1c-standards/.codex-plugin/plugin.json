@@ -1,0 +1,25 @@
+{
+  "name": "codex-1c-standards",
+  "version": "0.1.0",
+  "description": "1C development standards for Codex based on ai_rules_1c/content/standards.",
+  "author": {
+    "name": "ai_rules_1c"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "1C Development Standards",
+    "shortDescription": "Loads relevant 1C standards for BSL and metadata work.",
+    "longDescription": "Provides a Codex skill that routes 1C development tasks to the relevant standards copied from ai_rules_1c/content/standards.",
+    "developerName": "ai_rules_1c",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Review this BSL change using the relevant 1C standards.",
+      "Which 1C standards apply to this form or register task?",
+      "Implement a 1C change and follow only the needed standards."
+    ]
+  }
+}
