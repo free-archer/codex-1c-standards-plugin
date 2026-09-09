@@ -1,14 +1,14 @@
 {
-  "name": "ai-rules-1c",
+  "name": "1c-standart-rules",
   "interface": {
     "displayName": "AI Rules 1C"
   },
   "plugins": [
     {
-      "name": "codex-1c-standards",
+      "name": "1c-standards-rules",
       "source": {
         "source": "local",
-        "path": "./plugins/codex-1c-standards"
+        "path": "./plugins/1c-standards-rules"
       },
       "policy": {
         "installation": "AVAILABLE",

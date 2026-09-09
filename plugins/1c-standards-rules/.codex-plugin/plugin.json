@@ -1,5 +1,5 @@
 {
-  "name": "codex-1c-standards",
+  "name": "1c-standards-rules",
   "version": "0.1.0",
   "description": "1C development standards for Codex based on ai_rules_1c/content/standards.",
   "author": {
@@ -7,7 +7,7 @@
   },
   "skills": "./skills/",
   "interface": {
-    "displayName": "1C Development Standards",
+    "displayName": "1C SSL Standards",
     "shortDescription": "Loads relevant 1C standards for BSL and metadata work.",
     "longDescription": "Provides a Codex skill that routes 1C development tasks to the relevant standards copied from ai_rules_1c/content/standards.",
     "developerName": "ai_rules_1c",
