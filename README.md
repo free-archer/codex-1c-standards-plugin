@@ -1,79 +1,68 @@
 # Codex 1C Standards Plugin
 
-Plugin for Codex that adds a reusable `1c-development-standards` skill with 1C:Enterprise / BSL development standards.
+Плагин для Codex, который добавляет skill `1c-development-standards` со стандартами разработки 1C:Enterprise / BSL.
 
-The plugin is packaged as a local/repository marketplace:
+Плагин публикуется через GitHub-репозиторий:
 
-- marketplace name: `1c-standart-rules`
-- plugin name: `1c-standards-rules`
-- display name in Codex: `1C SSL Standards`
+- имя marketplace: `1c-standart-rules`
+- имя плагина: `1c-standards-rules`
+- отображаемое имя в Codex: `1C SSL Standards`
 
-## Install in Codex
+## Установка в Codex
 
-Add this repository as a Codex plugin marketplace:
+Добавьте этот репозиторий как marketplace плагинов Codex:
 
 ```bash
 codex plugin marketplace add free-archer/codex-1c-standards-plugin
 ```
 
-Install the plugin from that marketplace:
+Установите плагин из marketplace:
 
 ```bash
 codex plugin add 1c-standards-rules@1c-standart-rules
 ```
 
-Restart Codex or start a new chat after installation so the skill is loaded.
+После установки перезапустите Codex или начните новый чат, чтобы skill был загружен.
 
-## Install from a local clone
+## Проверка установки
 
-Use this variant if you want to edit the plugin locally:
-
-```bash
-git clone https://github.com/free-archer/codex-1c-standards-plugin.git
-cd codex-1c-standards-plugin
-codex plugin marketplace add "$(pwd)"
-codex plugin add 1c-standards-rules@1c-standart-rules
-```
-
-## Verify installation
-
-List available plugins:
+Посмотреть доступные плагины из этого marketplace:
 
 ```bash
 codex plugin list --available --marketplace 1c-standart-rules
 ```
 
-In Codex, you can also open the plugin browser:
+Также можно открыть браузер плагинов в Codex:
 
 ```text
 /plugins
 ```
 
-Search for `1C SSL Standards`, open it, and install it if it is not already installed.
+Найдите `1C SSL Standards` и установите плагин, если он еще не установлен.
 
-## Usage
+## Использование
 
-After installation, ask Codex to use the 1C standards when working with BSL, metadata, forms, DCS, registers, BSP rights, transactions, extensions, logging, or debugging.
+После установки просите Codex использовать стандарты 1C при работе с BSL, метаданными, формами, СКД, регистрами, правами БСП, транзакциями, расширениями, логированием или отладкой.
 
-Example prompts:
+Примеры запросов:
 
 ```text
-Review this BSL change using the 1C development standards.
+Проверь это изменение BSL по стандартам разработки 1C.
 ```
 
 ```text
-Implement this 1C form change and apply only the relevant standards.
+Реализуй изменение формы 1C и примени только релевантные стандарты.
 ```
 
 ```text
-Which packaged 1C standards apply to this register design?
+Какие стандарты из плагина применимы к проектированию этого регистра?
 ```
 
-The skill loads only the relevant files from `plugins/1c-standards-rules/references/standards/` instead of loading the full standards set for every task.
+Skill загружает только релевантные файлы стандартов, а не весь набор правил для каждой задачи.
 
-## Update
+## Обновление
 
-For a GitHub marketplace source, refresh the marketplace snapshot and reinstall the plugin if needed:
+Обновить marketplace и переустановить плагин:
 
 ```bash
 codex plugin marketplace upgrade
